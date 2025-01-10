@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eliminar Docente</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Eliminar un Centro de computo</h1>
+        </header>
+        <div class="container">
+            <!-- Formulario para buscar un docente -->
+            <form action="eliminar_centro.php" method="GET">
+                <div class="mb-3">
+                    <label for="buscar_centro">Numero del centro de computo:</label>
+                    <input type="number" id="buscar_centro" name="buscar_centro" required>
+                </div>
+                <button type="submit">Buscar Centro de computo</button>
+            </form>
+        </div>
+    </body>
+</html>

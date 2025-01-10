@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Agregar Docente</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Agregar Centro de computo</h1>
+        </header>
+        <div class="container">
+            <form action="guardar_centro.php" method="POST">
+
+                <div class="mb-3">
+                    <label for="numero_centro">Número de Centro de Cómputo:</label>
+                    <input type="number" id="numero_centro" name="numero_centro" required min="1">                      
+                </div>
+
+                <div class="mb-3">
+                    <label for="computadoras">Número de Computadoras:</label>
+                    <input type="number" id="computadoras" name="computadoras" required min="1">
+                </div>
+                
+                  <!-- Fecha de inicio del semestre -->
+                <div class="mb-3">
+                    <label for="inicio_semestre">Fecha de Inicio del Semestre:</label>
+                    <input type="date" id="inicio_semestre" name="inicio_semestre" required min=1>
+                </div>
+
+                <!-- Fecha de fin del semestre -->
+                <div class="mb-3">
+                    <label for="fin_semestre">Fecha de Fin del Semestre:</label>
+                    <input type="date" id="fin_semestre" name="fin_semestre" required min=1>
+                </div>
+
+
+                <button type="submit">Agregar Centro de computo</button>
+
+            </form>
+        </div>
+    </body>
+</html>

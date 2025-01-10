@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro de Docente</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+        <h1>Registro de Docente</h1>
+         </header>
+        <div class="container">
+            <form action="guardar_registro.php" method="POST">
+
+                <div class="mb-3"">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="materia">Materia:</label>
+                    <input type="text" id="materia" name="materia" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="carrera">Carrera:</label>
+                    <select id="carrera" name="carrera" required>
+                        <option value="administracion">Administración</option>
+                        <option value="contaduria">Contaduría</option>
+                        <option value="economia">Economía</option>
+                        <option value="informatica">Informática</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="semestre">Semestre:</label>
+                    <select id="semestre" name="semestre" required>
+                        <option value="1">1er semestre</option>
+                        <option value="2">2do semestre</option>
+                        <option value="3">3er semestre</option>
+                        <option value="4">4to semestre</option>
+                        <option value="5">5to semestre</option>
+                        <option value="6">6to semestre</option>
+                        <option value="7">7mo semestre</option>
+                        <option value="8">8vo semestre</option>
+                        <option value="9">9no semestre</option>
+                        <option value="10">10mo semestre</option>
+                        <option value="11">11vo semestre</option>
+                        <option value="12">12vo semestre</option>
+                        <option value="13">13vo semestre</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="grupo">Grupo:</label>
+                    <select id="grupo" name="grupo" required>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="U">U</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="horario">Horario:</label>
+                    <select id="horario" name="horario" required>
+                        <option value="7:30-8:20am">7:30-8:20am</option>
+                        <option value="8:25-9:35am">8:25-9:35am</option>
+                        <option value="9:35-10:30am">9:35-10:30am</option>
+                        <option value="10:30-11:25am">10:30-11:25am</option>
+                        <option value="11:25-12:20pm">11:25-12:20pm</option>
+                        <option value="12:20-1:30pm">12:20-1:30pm</option>
+                        <option value="1:30-2:20pm">1:30-2:20pm</option>
+                        <option value="2:30-3:20pm">2:30-3:20pm</option>
+                        <option value="3:25-4:15pm">3:25-4:15pm</option>
+                        <option value="4:35-5:25pm">4:35-5:25pm</option>
+                        <option value="5:30-6:20pm">5:30-6:20pm</option>
+                        <option value="6:25-7:15pm">6:25-7:15pm</option>
+                        <option value="7:20-8:10pm">7:20-8:10pm</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="alumnos">Número de Alumnos:</label>
+                    <input type="number" id="alumnos" name="alumnos" required min="1">
+                </div>
+
+                <div class="mb-3">
+                    <label for="programas">Programas:</label>
+                    <input type="text" id="programas" name="programas" required>
+                </div>
+
+
+                <button type="submit">Agregar Docente</button>
+            </form>
+        </div>
+    </body>
+</html>
